@@ -1,5 +1,5 @@
 tiles.setCurrentTilemap(tilemap`level2`)
-let NIGGERS = sprites.create(img`
+let SIGMA = sprites.create(img`
     . . . . . . f f f f . . . . . . 
     . . . . f f f 2 2 f f f . . . . 
     . . . f f f 2 2 2 2 f f f . . . 
