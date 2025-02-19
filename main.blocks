@@ -1,18 +1,1 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="no)_V@itz_mjU(?rVJn@">SIGMA</variable><variable type="KIND_SpriteKind" id="HGh7m:VmOnt}}^kM-csC">Player</variable><variable type="KIND_SpriteKind" id="Zje[=F%rtlruOE9F4~QA">Projectile</variable><variable type="KIND_SpriteKind" id="[N%m8|Riw:*bd-Ex}F-:">Food</variable><variable type="KIND_SpriteKind" id="e_cF`^x)-CRhtV2VJnZo">Enemy</variable></variables><block type="pxt-on-start" id="#MH=3={?3k?vNL:|ZAC$" x="0" y="0"><statement name="HANDLER"><block type="set_current_tilemap" id="(+ouB*Ik%uILUZFtkuyx"><value name="tilemap"><shadow type="tiles_tilemap_editor" id="xg9tKy?C##ddHlye^2w%"><field name="tilemap">tilemap`level2`</field><data>{"commentRefs":[],"fieldData":{"tilemap":"level2"}}</data></shadow></value><next><block type="variables_set" id="9KnaTCdoA@006Y}u(?.A"><field name="VAR" id="no)_V@itz_mjU(?rVJn@">SIGMA</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="Klk(9pfGQzyjHyG8ECy?"><value name="img"><shadow type="screen_image_picker" id="SJ$(A%t,dg.[Yb#/YV/="><field name="img">img`
-. . . . . . f f f f . . . . . . 
-. . . . f f f 2 2 f f f . . . . 
-. . . f f f 2 2 2 2 f f f . . . 
-. . f f f 2 2 2 2 2 2 f f f . . 
-. . f f 2 2 2 2 2 2 2 2 2 f . . 
-. . f 2 2 f f f f f f 2 2 f . . 
-. . f f f 2 2 2 2 2 f f 2 f . . 
-. f f 2 2 2 f 2 2 f 2 2 2 f f . 
-. f 2 2 2 2 f 2 f f 2 2 2 2 f . 
-. . 2 2 2 f f 2 f 2 2 2 2 f . . 
-. . . 2 2 2 2 2 2 2 2 2 f . . . 
-. . 2 2 f f 2 2 2 f 2 f 2 2 . . 
-. . 2 2 2 f f 2 f f 2 f 2 2 . . 
-. . 2 2 f 2 f f f 2 2 f 2 2 . . 
-. . . . . f f f f f f . . . . . 
-. . . . . f f . . f f . . . . . 
-`</field><data>{"commentRefs":[],"fieldData":{"img":"SJ$(A%t,dg.[Yb#/YV/="}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="xXy`i}s:I:)SZ:a2^e^w"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="FEVXDFztn[v4}ZJ4^58t"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="sprite"><shadow type="variables_get" id="s].HD]3[~l7$x8c-lbQI"><field name="VAR" id="no)_V@itz_mjU(?rVJn@">SIGMA</field></shadow></value><next><block type="camerafollow" id="|bQ/,WwmwKg|.#aU1sDv"><value name="sprite"><shadow type="variables_get" id="4UCJP.{bYKy6|a1!5v?u"><field name="VAR" id="no)_V@itz_mjU(?rVJn@">SIGMA</field></shadow></value></block></next></block></next></block></next></block></statement></block></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="no)_V@itz_mjU(?rVJn@">SIGMA</variable><variable type="KIND_SpriteKind" id="HGh7m:VmOnt}}^kM-csC">Player</variable><variable type="KIND_SpriteKind" id="Zje[=F%rtlruOE9F4~QA">Projectile</variable><variable type="KIND_SpriteKind" id="[N%m8|Riw:*bd-Ex}F-:">Food</variable><variable type="KIND_SpriteKind" id="e_cF`^x)-CRhtV2VJnZo">Enemy</variable></variables><block type="pxt-on-start" id="#MH=3={?3k?vNL:|ZAC$" x="0" y="0"></block></xml>
