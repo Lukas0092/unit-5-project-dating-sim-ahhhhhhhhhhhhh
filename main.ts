@@ -1,7 +1,70 @@
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherSprite) {
-    game.showLongText("Welcome to the dating sim!", DialogLayout.Bottom)
+namespace SpriteKind {
+    export const Date = SpriteKind.create()
+}
+controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (Speed == 1) {
+    	
+    } else {
+        X = 0
+        Y = -50
+    }
 })
-let Mc = sprites.create(img`
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Date, function (sprite, otherSprite) {
+    game.showLongText("Welcome to the dating sim! Try to rizz all the huzz you can", DialogLayout.Bottom)
+    pause(100)
+    tiles.placeOnRandomTile(Mc, assets.tile`myTile`)
+})
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    projectile = sprites.createProjectileFromSprite(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . 9 9 9 9 9 . . . . . . 
+        . . . . 9 9 9 9 9 9 9 . . . . . 
+        . . . . 9 9 9 9 9 9 9 . . . . . 
+        . . . . 9 9 9 9 9 9 9 . . . . . 
+        . . . . 9 9 9 9 9 9 9 . . . . . 
+        . . . . 9 9 9 9 9 9 9 . . . . . 
+        . . . . . 9 9 9 9 9 . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        `, Mc, X, Y)
+})
+controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (Speed == 1) {
+    	
+    } else {
+        X = -50
+        Y = 0
+    }
+})
+controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (Speed == 1) {
+    	
+    } else {
+        X = 50
+        Y = 0
+    }
+})
+controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (Speed == 1) {
+    	
+    } else {
+        X = 0
+        Y = 50
+    }
+})
+let projectile: Sprite = null
+let Y = 0
+let X = 0
+let Speed = 0
+let Mc: Sprite = null
+tiles.setCurrentTilemap(tilemap`level7`)
+Mc = sprites.create(img`
     . . . . f f f f . . . . 
     . . f f f f f f f f . . 
     . f f f f f f f f f f . 
@@ -19,7 +82,7 @@ let Mc = sprites.create(img`
     . . . f f f f f f . . . 
     . . . f f . . f f . . . 
     `, SpriteKind.Player)
-Mc.setPosition(75, 98)
+Mc.setPosition(78, 89)
 let Natsuki = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
@@ -37,5 +100,6 @@ let Natsuki = sprites.create(img`
     . . e f b c b c b c b b f e . . 
     . . . f f c c c d c d f f . . . 
     . . . . . f f b b f f . . . . . 
-    `, SpriteKind.Player)
+    `, SpriteKind.Date)
 controller.moveSprite(Mc)
+scene.cameraFollowSprite(Mc)
